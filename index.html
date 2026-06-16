@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Battle</title>
+    <link rel="stylesheet" href="gamestyle.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div>Score: <span id="score">0</span></div>
+            <div>Lives: <span id="lives">3</span></div>
+        </div>
+
+        <div class="game" id="gameArea"></div>
+
+        <input id="input" placeholder="Type the words you see on screen!">
+
+        <div class="screen" id="startScreen">
+            <h2>Typing Battle</h2>
+            <button onclick="startGame()">Start</button>
+        </div>
+
+        <div class="screen hidden" id="gameOver">
+            <h2>Game Over</h2>
+            <p id="finalScore"></p>
+            <button onclick="location.reload()">Restart</button>
+        </div>
+
+    </div>
+
+    <script src="script.js">
+    </script>
+    
+</body>
+</html>
